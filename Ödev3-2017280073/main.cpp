@@ -7,7 +7,7 @@ int main()
     //OGUZHAN DINCAR-2017280073
 
 
-    //input.txt dosyasından verileri çekiyorum
+    //input.txt dosyasÄ±ndan verileri Ã§ekiyorum
     ifstream dosya("input.txt");
 
     string ogrenciID[50];
@@ -42,7 +42,7 @@ int main()
 
     //input.txt'de bos birakilan sorulara 0 yazdim.
 
-    while(dosya){  //input.txt'de 1.sutun=ogrenciID,2.sutun=ogrenciCevap olarak atadım.
+    while(dosya){  //input.txt'de 1.sutun=ogrenciID,2.sutun=ogrenciCevap olarak atadÄ±m.
         dosya >>ogrenciID[ogrenciSayisi]>>ogrenciCevap[ogrenciSayisi];
         ogrenciSayisi++;
     }
@@ -79,7 +79,7 @@ int main()
 
     int z=0;
 
-    //dogru,yanlis ve bos cevaplarin soylendigi gibi puanlarını atadım ve tuttum.
+    //dogru,yanlis ve bos cevaplarin soylendigi gibi puanlarÄ±nÄ± atadÄ±m ve tuttum.
     while(z<ogrenciSayisi-1){
         notlar[z] = dogruCevap[z] * 4;
         notlar[z] = notlar[z] + yanlisCevap[z] * -1;
@@ -153,6 +153,9 @@ int main()
     cout<<"Dosyaniz Hazirlanmistir Lutfen Kontrol Ediniz..."<<endl;
 
     output.close();
+	
+    //kaynak
+    //https://www.udemy.com/course/cpluspusprogramlama_nesneyeyonelikprogramlama/
 
 
     return 0;
